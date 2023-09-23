@@ -3,11 +3,11 @@
 
 - 🔭 I’m currently working on [Named Entity Recognition](https://github.com/pedrofuentes79/RNNs/tree/master/Named-Entity-Recognition)
 
-- 👀 I'm interested in **Machine Learning**
+- 👀 I'm interested in *Machine Learning*
 
 - 🌱 I want to learn more about [Cloud infrastructure (AWS)](https://github.com/pedrofuentes79/DolarBot)
 
-- 📫 How to reach me **pedrofuentes7799@gmail.com**
+- 📫 How to reach me *pedrofuentes7799@gmail.com*
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
