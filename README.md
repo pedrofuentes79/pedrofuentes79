@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Pedro Fuentes</h1>
-<h3 align="center">A hard-working passionate Data Science engineer.</h3>
+<h1>Hi 👋, I'm Pedro Fuentes</h1>
+<h3>A hard-working passionate Data Science engineer.</h3>
 
 - 🔭 I’m currently working on [Named Entity Recognition](https://github.com/pedrofuentes79/RNNs/tree/master/Named-Entity-Recognition)
 
