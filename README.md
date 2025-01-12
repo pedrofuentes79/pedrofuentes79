@@ -1,11 +1,5 @@
 <h1>Hi 👋, I'm Pedro Fuentes</h1>
-<h3>A hard-working passionate Data Science engineer.</h3>
-
-- 🔭 I’m currently working on [Anomaly Detection](https://github.com/pedrofuentes79/IOT-Anomaly-Detection)
-
-- 👀 I'm interested in *Machine Learning*
-
-- 🌱 I want to learn more about [Cloud infrastructure (AWS)](https://github.com/pedrofuentes79/DolarBot)
+<h3>A hard-working passionate software developer / data engineer.</h3>
 
 - 📫 How to reach me *pedrofuentes7799@gmail.com*
 <!---
