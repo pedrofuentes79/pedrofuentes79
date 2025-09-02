@@ -11,6 +11,10 @@ xkb_keymap {
         key <DELE> { [ End ] };
         key <INS> { [ Home ] };
         key <MENU> { [ Delete ] };
+        key <CAPS> {
+            type= "ONE_LEVEL",
+            symbols[Group1]= [ Multi_key ]
+        };
   };
   xkb_geometry  { include "pc(pc105)"	};
 };
