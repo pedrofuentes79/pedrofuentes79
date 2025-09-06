@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Nightlight time window: 20:00 → 06:00
+HOUR=$(date +%H)
+CURRENT_TEMP=$(hyprctl hyprsunset temperature 2>/dev/null | grep -oE '[0-9]+')
+
+START_NIGHT_TIME=20
+START_DAY_TIME=6
+TEMP_THRESHOLD=4000
+
+# Decide if we are in "night time"
+if [ "$HOUR" -ge "$START_NIGHT_TIME" ] || [ "$HOUR" -lt "$START_DAY_TIME" ]; then
+  # If it's night but current temp is "blueish" → toggle ON
+  if [ "$CURRENT_TEMP" -ge "$TEMP_THRESHOLD" ]; then
+    omarchy-toggle-nightlight
+  fi
+else
+  # If it's daytime but current temp is "reddish" → toggle OFF
+  if [ "$CURRENT_TEMP" -lt "$TEMP_THRESHOLD" ]; then
+    omarchy-toggle-nightlight
+  fi
+fi
