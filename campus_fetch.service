@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs campus-fetch weekly
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pedrofuentes79/Projects/campus-fetch
+ExecStart=/usr/bin/make nuevo
+Restart=no
+
+[Install]
+WantedBy=default.target
