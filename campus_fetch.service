@@ -1,1 +1,13 @@
-/home/pedrofuentes79/.config/systemd/user/campus_fetch.service
+[Unit]
+Description=Runs campus-fetch weekly
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/pedrofuentes79/Projects/campus-fetch
+ExecStart=/usr/bin/make nuevo
+Restart=on-failure
+RestartSec=5m
+StartLimitBurst=2
+
+[Install]
+WantedBy=default.target

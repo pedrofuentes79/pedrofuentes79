@@ -1,1 +1,7 @@
-/home/pedrofuentes79/.config/systemd/user/nightlight-auto.service
+[Unit]
+Description=Ensure correct nightlight state at boot and on schedule
+
+[Service]
+Type=oneshot
+ExecStart=%h/Projects/github-pedrofuentes79/nightlight-auto
+
