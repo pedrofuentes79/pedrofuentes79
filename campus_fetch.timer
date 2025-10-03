@@ -1,10 +1,1 @@
-[Unit]
-Description=Run campus-fetch weekly
-Requires=campus_fetch.service
-
-[Timer]
-OnCalendar=weekly
-Persistent=true
-
-[Install]
-WantedBy=timers.target
+/home/pedrofuentes79/.config/systemd/user/campus_fetch.timer
