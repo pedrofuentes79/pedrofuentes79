@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync local git repos to private GitLab projects
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=pedrofuentes79
+Group=pedrofuentes79
+# ensures the token is in the environment for the script
+ExecStart=/bin/bash -c 'source /home/pedrofuentes79/.config/gitlab-sync/token && /home/pedrofuentes79/Projects/github-pedrofuentes79/update_gitlab_repos.sh'
+WorkingDirectory=/home/pedrofuentes79/

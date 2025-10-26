@@ -1,0 +1,9 @@
+[Unit]
+Description=Run update_gitlab_repos daily
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
