@@ -2,11 +2,23 @@
 
 # Nightlight time window: 20:00 → 06:00
 HOUR=$(date +%H)
-CURRENT_TEMP=$(hyprctl hyprsunset temperature 2>/dev/null | grep -oE '[0-9]+')
+
+# Check if hyprsunset is running
+if ! pgrep -x hyprsunset >/dev/null; then
+  # hyprsunset not running = screen is in daylight mode
+  CURRENT_TEMP=6500
+else
+  # Get temperature from running hyprsunset
+  CURRENT_TEMP=$(hyprctl hyprsunset temperature 2>/dev/null | grep -oE '[0-9]+' | head -1)
+  # If we couldn't get temp for some reason, assume daylight
+  if [ -z "$CURRENT_TEMP" ]; then
+    CURRENT_TEMP=6500
+  fi
+fi
 
 START_NIGHT_TIME=20
 START_DAY_TIME=6
-TEMP_THRESHOLD=4000
+TEMP_THRESHOLD=4001
 
 # Decide if we are in "night time"
 if [ "$HOUR" -ge "$START_NIGHT_TIME" ] || [ "$HOUR" -lt "$START_DAY_TIME" ]; then
