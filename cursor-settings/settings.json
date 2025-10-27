@@ -1,0 +1,5 @@
+{ "workbench.colorTheme": "Monokai Pro (Filter Ristretto)",
+    "window.commandCenter": true,
+    "workbench.sideBar.location": "right",
+    "git.autofetch": true
+}
